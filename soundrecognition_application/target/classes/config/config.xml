@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<it.unipi.dii.dmml.soundrecognition.soundrecognition_application.ParamConfig>
+    <ip>localhost</ip>
+    <port>3306</port>
+    <username>root</username>
+    <dbname>SoundRecognition</dbname>
+    <adminUsername>admin</adminUsername>
+    <adminPassword>admin</adminPassword>
+
+</it.unipi.dii.dmml.soundrecognition.soundrecognition_application.ParamConfig>
