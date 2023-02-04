@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unipi.dii.dmml.soundrecognition.soundrecognition_application.controller.MainController"
+            stylesheets="@stylesheets/login.css"
+            onDragOver="#HandleDragOver" onDragDropped="#HandleDrop">
+    <Label
+            styleClass="title"
+            AnchorPane.topAnchor="70"
+            AnchorPane.leftAnchor="10"
+            AnchorPane.rightAnchor="10"
+    >CLASSIFICATION</Label>
+    <VBox
+            alignment="CENTER"
+            spacing="20"
+            AnchorPane.topAnchor="170"
+            AnchorPane.leftAnchor="10"
+            AnchorPane.rightAnchor="10">
+        <!--Label VBox -->
+        <VBox alignment="CENTER" >
+            <Label styleClass="labels">Drag and Drop audio file</Label>
+
+            <Label fx:id="username" styleClass="fields" minHeight="30.0" minWidth="200.0" />
+
+            <ImageView fx:id="imageView" fitHeight="350.0" fitWidth="400.0" layoutX="61.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" >
+            </ImageView>
+
+        </VBox>
+        <Button fx:id="Playbutton" styleClass="home" text="Play" onAction="#play" disable="true" />
+        <Button fx:id="Execute" styleClass="login" text="Execute" onAction="#classification" disable="true"/>
+        <Button styleClass="home" text="Exit" onAction="#exit" />
+        <Label fx:id="errorField" styleClass="error" />
+    </VBox>
+
+</AnchorPane>
+
+

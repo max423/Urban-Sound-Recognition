@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.unipi.dii.dmml.soundrecognition.soundrecognition_application.controller.RegistrationController"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@stylesheets/login.css">
+
+    <Label styleClass="s_title"
+           AnchorPane.topAnchor="50"
+           AnchorPane.leftAnchor="10"
+           AnchorPane.rightAnchor="10">
+        SIGN IN
+    </Label>
+    <VBox alignment="CENTER"
+          spacing="5"
+          AnchorPane.topAnchor="110"
+          AnchorPane.leftAnchor="10"
+          AnchorPane.rightAnchor="10">
+
+        <Label styleClass="error" fx:id="errorMessage" />
+
+        <Label styleClass="s_labels">Full name</Label>
+        <TextField styleClass="fields" fx:id="full_name" />
+
+        <Label styleClass="s_labels">Username</Label>
+        <TextField styleClass="fields" fx:id="username" />
+
+        <Label styleClass="s_labels">Email</Label>
+        <TextField styleClass="fields" fx:id="email" />
+
+        <Label styleClass="s_labels">Confirm email</Label>
+        <TextField styleClass="fields" fx:id="email_confirm" />
+
+        <Label styleClass="s_labels">Password</Label>
+        <PasswordField styleClass="fields" fx:id="password" />
+
+        <Label styleClass="s_labels">Confirm password</Label>
+        <PasswordField styleClass="fields" fx:id="password_confirm" />
+
+    </VBox>
+    <VBox alignment="CENTER"
+          spacing="10"
+          AnchorPane.topAnchor="610"
+          AnchorPane.leftAnchor="10"
+          AnchorPane.rightAnchor="10" >
+
+        <Button styleClass="signin" text="Sign in" onAction="#submit" />
+
+        <Button styleClass="home" text="Home" onAction="#goback" />
+
+    </VBox>
+
+</AnchorPane>
+
+
+
+
+
+
+
+
+
+
+
